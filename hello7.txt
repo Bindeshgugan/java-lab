@@ -1,0 +1,20 @@
+import java.io.*;
+public class hello7
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+string name;
+double wid,hei,pri;
+
+System.out.println("Enter the type of furniture you want from FFC:");
+name=in.readLine();
+System.out.println("Enter the width of the furniture:");
+wid=double.parseDiuble(in.readLine()):
+System.out.println("Enter the height of the furniture:");
+hei=double.parseDouble(in.readLine());
+System.out.println("The type of furniture you asked for is:"+name);
+System.out.println("The height of the furniture is:"+hei);
+System.out.println("The width of the furmiture is:"+wid);
+}
+}

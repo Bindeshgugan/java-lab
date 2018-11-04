@@ -1,0 +1,17 @@
+import java.io.*;
+public class hello1
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+double u,t,a,dist;
+System.out.println("enter the initital velocity:");
+u=double.parseDouble(in.readLine());
+Syste.out.println("enter the time taken:");
+t=double.parseDouble(in.readLine());
+System.out.println("enter the accleration:");
+a=double.parseDouble(in.readLine());
+dist=u*t+(a*t*t)/2;
+System.outprintln("the calculated distance is:"+dist);
+}
+}

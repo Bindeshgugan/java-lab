@@ -1,0 +1,15 @@
+import java.io.*;
+public class hello2
+{
+public static void main(String args[])throws IOException
+{
+BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+double vol,r,h;
+System.out.println("enter the height of the cylinder:");
+h=double.parseDouble(in.readLine());
+System.out.println("enter the radius of the cylinder:");
+r=double.parseDouble(in.readLine());
+vol=(22*r*r*h)/7;
+System.out.println("the volume of the cylinder is:"+vol);
+}
+}

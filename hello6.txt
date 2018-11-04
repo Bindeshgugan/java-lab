@@ -1,0 +1,56 @@
+import java.io.*;
+public class hello6
+{
+public static void main(String args[])throws IOException
+{
+
+BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+char ch;
+string name,dept,des,mar;
+double EID,DOJ,DOB,DOM;                             //DOM-> date of marriage   DOB->date of birth  DOJ->date of joining
+System.out.println("enter your respective case:");
+System.out.println("case 1:to enter the detailsmof the employee");
+System.out.println("case 2:to view the employee's information");
+System.out.println("case 3:to exit");
+System.out.println("enter your choice:");
+switch(ch);
+{
+case 1:
+{
+System.out.println("enter the name of the employee:");
+name=in.readLine();
+System.out.println("enter the departement of the employee:");
+dept=in.readLine();
+System.out.println("enter the designation of the employee:");
+des=in.readLine();
+System.out.println("enter the DATE OF BIRTH(DOB) of the employee:");
+DOB=double.parseDouble(in.readLine());
+System.out.println("enter the date on which the emplyee joined the company:");
+DOJ=double.parseDouble(in.readLine());
+System.out.println("enter the DATE OF MARRIAGE of the employee (if not married enter 00/00/0000)");
+DOM=double.parseDouble(in.readLine());
+}
+case 2:
+{
+System.out.println("The name of the employee is"+name);
+System.out.println("The departement of the employee is:"+dept);
+System.out.println("The designation of the employee is:"+des);
+System.out.println("The DATE OF BIRTH of the employee is:"+DOB);
+System.out.println("The date on which the employee joined the company is:"+DOJ);
+System.out.println("The DATE OF MARRIAGE is:"+DOM);
+break;
+}
+case 3:
+{
+System.out.println("Oops! looks like you wanna leave");
+System.out.println("See ya!");
+System.out.println("Bye-Bye");
+break;
+}
+}
+System.out.println("WRONG CHOICE");
+}
+}
+
+
+
